@@ -1,0 +1,9 @@
+services:
+
+  wallabag:
+    image: wallabag/wallabag:2.6.12
+    container_name: wallabag
+    environment:
+     - SYMFONY__ENV__DOMAIN_NAME="http://localhost:8080"
+    ports:
+      - "8080:80"
